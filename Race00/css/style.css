@@ -1,0 +1,87 @@
+body {
+    background-color: #c0b7b1;
+}
+
+h1 {
+    text-align: center;
+    color:rgb(89, 89, 89);
+}
+
+#main-box {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 530px;
+    background-color: #976d36;
+    padding: 3px;
+    border-radius:7px;
+}
+
+div.down {
+    position: relative;
+    bottom: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 10px 10px 10px;
+}
+
+td {
+
+    background-color: #bb9457;
+    width: 80px;
+    height: 60px;
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+table tr td {
+    border-bottom: 2px solid #c6bba9;
+    border-right: 2px solid #c6bba9;
+}
+
+table tr td:last-child {
+    border-right: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:last-child td:first-child{
+    border-radius: 0px 0px 0px 10px;
+}
+
+table tr:last-child td:last-child{
+    border-radius: 0px 0px 10px 0px;
+}
+
+td:hover {
+    background-color: #bb9557a3;
+    font-size: 24px;
+}
+
+.up {  
+    min-height: 50px;
+    margin: 10px 10px 0 10px;
+    padding:10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #c6bba9;
+    color: rgb(96, 96, 96);
+    font-size: 20px;
+    text-align: end;
+}
+#equation{
+    word-break: break-all;
+    color: rgb(38, 38, 38);
+    font-size: 24px;
+
+}
+
+.number { 
+    background-color: #bb8a3b; 
+}

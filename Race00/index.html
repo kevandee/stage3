@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="main-box">
+        <div class="up">
+            <p id="result">0</p>
+            <p id="equation">[your equation]</p>
+        </div>
+        <div class="down">
+            <table class="calculator">
+                <tr>
+                    <td class="button" onclick="onclick_operator('clear')">C</td>
+                    <td class="button operator" onclick="onclick_operator('+-')">+/-</td>
+                    <td class="button operator" onclick="onclick_operator('%')">%</td>
+                    <td class="button operator"  onclick="onclick_operator('/')">/</td>
+                    <td class="button operator" colspan="2" onclick="onclick_operator('del')">DEL</td>
+                </tr>
+                <tr>
+                    <td class="button number" onclick="onclick_number(7)" >7</td>
+                    <td class="button number" onclick="onclick_number(8)" >8</td>
+                    <td class="button number" onclick="onclick_number(9)" >9</td>
+                    <td class="button operator" onclick="onclick_operator('*')">*</td>
+                    <td class="button operator" colspan="2" onclick="onclick_operator('!')">!</td>
+                </tr>
+                <tr>
+                    <td class="button number" onclick="onclick_number(4)" >4</td>
+                    <td class="button number" onclick="onclick_number(5)" >5</td>
+                    <td class="button number" onclick="onclick_number(6)" >6</td>
+                    <td class="button operator" onclick="onclick_operator('+')">+</td>
+                    <td class="button operator" colspan="2" onclick="onclick_operator('sqrt')">√</td>
+                </tr>
+                <tr>
+                    <td class="button number" onclick="onclick_number(1)" >1</td>
+                    <td class="button number" onclick="onclick_number(2)" >2</td>
+                    <td class="button number" onclick="onclick_number(3)" >3</td>
+                    <td class="button operator" onclick="onclick_operator('-')">-</td>
+                    <td class="button operator" colspan="2" onclick="onclick_operator('pow')">x<sup>a</sub></td>
+                </tr>
+                <tr>
+                    <td class="button number" colspan="2" onclick="onclick_number(0)" >0</td>
+                    <td class="button number" onclick="onclick_number('dot')" >.</td>
+                    <td class="button operator" colspan="2" onclick="onclick_operator('=')">=</td>
+                </tr>
+            
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
